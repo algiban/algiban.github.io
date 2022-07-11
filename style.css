@@ -1,6 +1,9 @@
 .jumbotron {
   padding-top: 9rem;
-  background-color: #e2edff;
+  background-image: url('img/bgg.jpg');
+  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
 #service {
   background-color: #e2edff;
