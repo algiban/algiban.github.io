@@ -127,7 +127,7 @@
                             </u></strong> </h1>
                 </div>
             </div>
-            <div class="row justify-content-center text-center text-black text-bold mx-5">
+            <div class="row justify-content-center text-center text-black text-bold mx-2">
                 <h4 data-aos="fade-right" data-aos-duration="700">
                     Deskripsi
                 </h4>
@@ -152,7 +152,7 @@
         </div>
         <div class="container">
 
-            <div class="row justify-content-center mt-5">
+            <div class="row justify-content-center mt-2">
 
                 <div class="col-8 col-lg-6">
                     <label class="text-black" data-aos="fade-up">Masukkan angka desimal:</label>
@@ -208,9 +208,10 @@
                     Deskripsi
                 </h4>
                 <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
-                    Untuk memperoleh komplemen 1 suatu bilangan biner (berbasis 2), kita mengurangkan setiap digit
-                    bilangan tersebut dari 1.
-                    Alternatifnya, kita dapat mengganti setiap 1 dengan 0 dan setiap 0 dengan 1.
+                    Untuk memperoleh komplemen 7 suatu bilangan oktal (basis 8), <br> kita mengurangkan setiap digit
+                    bilangan
+                    tersebut dari 7.
+                    dan harus di conversi dulu ke bilangan octal
                 </p>
             </div>
         </div>
@@ -222,9 +223,9 @@
                     <label class="text-white" data-aos="fade-up">Masukkan angka desimal:</label>
                     <div class="input-group mb-3" data-aos="fade-up">
                         <input class="form-control" placeholder="Masukkan Angka desimal"
-                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal3" required>
                         <button class="btn btn-warning" type="button"
-                            onclick="calculateOnesComplement()">Hitung</button>
+                            onclick="calculateSevensComplement()">Hitung</button>
                     </div>
 
                     <label class="text-white" data-aos="fade-up">Hasil</label>
@@ -267,9 +268,20 @@
                     Deskripsi
                 </h4>
                 <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
-                    Untuk memperoleh komplemen 1 suatu bilangan biner (berbasis 2), kita mengurangkan setiap digit
-                    bilangan tersebut dari 1.
-                    Alternatifnya, kita dapat mengganti setiap 1 dengan 0 dan setiap 0 dengan 1.
+                    <strong>
+
+                        Langkah 1: Temukan Komplemen 7
+                    </strong> <br>
+
+                    Kita memperoleh komplemen 7 dari suatu bilangan oktal <br> dengan mengurangkan setiap digit dari 7.
+                    <br>
+                    <strong>
+
+                        Langkah 2: Tambahkan 1 ke Komplemen 7
+                    </strong>
+
+                    <br>
+                    Kita menambahkan 1 pada komplemen 7 untuk <br> mendapatkan komplemen 8.
                 </p>
             </div>
         </div>
@@ -281,9 +293,9 @@
                     <label class="text-black" data-aos="fade-up">Masukkan angka desimal:</label>
                     <div class="input-group mb-3" data-aos="fade-up">
                         <input class="form-control" placeholder="Masukkan Angka desimal"
-                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal4" required>
                         <button class="btn btn-warning" type="button"
-                            onclick="calculateOnesComplement()">Hitung</button>
+                            onclick="calculateEightsComplement()">Hitung</button>
                     </div>
 
                     <label class="text-black" data-aos="fade-up">Hasil</label>
@@ -345,9 +357,9 @@
                     <label class="text-white" data-aos="fade-up">Masukkan angka desimal:</label>
                     <div class="input-group mb-3" data-aos="fade-up">
                         <input class="form-control" placeholder="Masukkan Angka desimal"
-                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal5" required>
                         <button class="btn btn-warning" type="button"
-                            onclick="calculateOnesComplement()">Hitung</button>
+                            onclick="calculateNinesComplement()">Hitung</button>
                     </div>
 
                     <label class="text-white" data-aos="fade-up">Hasil</label>
