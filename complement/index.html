@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="
+    stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/fontawesome-free/attribution.js" />
+</head>
+
+<body class="back">
+
+
+
+    <div class=" shadow p-3 mb-5 bg-bod1 rounded fixed-top ">
+        <header class="d-flex justify-content-center  ">
+            <ul class="nav nav-pills ">
+                <li class="nav-item"><a href="#Home" class="nav-link" data-target="Home">Home</a></li>
+                <li class="nav-item"><a href="#compl" class="nav-link" data-target="compl">Compl</a></li>
+
+                <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <section class="jumbotron text-center" id="Home">
+        <div class="container my-5 justify-content-center">
+
+            <br>
+            <br>
+            <br>
+            <h1 class="mt-5" data-aos="fade-right" data-aos-duration="1000">Complement</h1>
+            <p class="lead " data-aos="fade-left" data-aos-duration="1000">Complement adalah istilah yang digunakan
+                dalam matematika dan pemrograman komputer untuk <br> menggambarkan nilai yang melengkapi atau
+                mengkoreksi
+                nilai lainnya, biasanya dalam konteks operasi matematika atau perhitungan..
+            </p>
+
+            <a href="#compl">
+                <button type="button" class="btn btn-primary" data-aos="fade-up" data-aos-duration="1000">Mulai</button>
+            </a>
+        </div>
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#39A7FF" fill-opacity="0.9"
+            d="M0,96L30,117.3C60,139,120,181,180,208C240,235,300,245,360,256C420,267,480,277,540,261.3C600,245,660,203,720,192C780,181,840,203,900,181.3C960,160,1020,96,1080,96C1140,96,1200,160,1260,186.7C1320,213,1380,203,1410,197.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+    <section id="compl">
+
+        <div class="container">
+            <div class="row text-center text-white mb-3">
+                <div class="col mb-3">
+                    <h1 data-aos="fade-up" data-aos-duration="500"> <strong><u>
+
+                                One's Complement
+                            </u></strong> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center text-white text-bold mx-5">
+                <h4 data-aos="fade-right" data-aos-duration="700">
+                    Deskripsi
+                </h4>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                    Untuk memperoleh komplemen 1 suatu bilangan biner <br> (berbasis 2), kita mengurangkan setiap digit
+                    bilangan <br> tersebut dari 1. Alternatifnya, kita dapat mengganti <br> setiap 1 dengan 0 dan setiap
+                    0 dengan
+                    1.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-8 col-lg-6">
+                    <label class="text-white" data-aos="fade-up">Masukkan angka desimal:</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <input class="form-control" placeholder="Masukkan Angka desimal"
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                        <button class="btn btn-warning" type="button"
+                            onclick="calculateOnesComplement()">Hitung</button>
+                    </div>
+
+                    <label class="text-white" data-aos="fade-up">Hasil</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <textarea class="form-control" id="compls" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <Label data-aos="fade-down">Complement lainnya : </Label>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-right" href="#2compl"
+                    role="button">2</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl7" role="button">7</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl8" role="button">8</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-left" href="#compl9" role="button">9</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#CDF5FD" fill-opacity="1"
+                d="M0,64L20,101.3C40,139,80,213,120,208C160,203,200,117,240,90.7C280,64,320,96,360,144C400,192,440,256,480,245.3C520,235,560,149,600,138.7C640,128,680,192,720,181.3C760,171,800,85,840,64C880,43,920,85,960,106.7C1000,128,1040,128,1080,128C1120,128,1160,128,1200,160C1240,192,1280,256,1320,266.7C1360,277,1400,235,1420,213.3L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+
+
+    </section>
+    <section id="2compl">
+
+        <div class="container">
+            <div class="row text-center text-black mb-3">
+                <div class="col mb-3">
+                    <h1 data-aos="fade-up" data-aos-duration="500"> <strong><u>
+
+                                Two's Complement
+                            </u></strong> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center text-black text-bold mx-5">
+                <h4 data-aos="fade-right" data-aos-duration="700">
+                    Deskripsi
+                </h4>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                    <b>
+
+                        Langkah 1: Temukan Komplemen 1
+                    </b>
+                    <br>
+                    Kita memperoleh komplemen 1 dari bilangan biner <br> dengan mengurangkan setiap digit dari 1 atau
+                    <br> alternatifnya dengan mengganti setiap 0 dengan 1 dan <br> setiap 1 dengan 0.
+                    <br>
+
+                    <b>
+
+                        Langkah 2: Tambahkan 1 ke Komplemen 1
+                    </b>
+                    <br>
+                    Kita menambahkan 1 pada komplemen 1 untuk mendapatkan komplemen 2.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-8 col-lg-6">
+                    <label class="text-black" data-aos="fade-up">Masukkan angka desimal:</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <input class="form-control" placeholder="Masukkan Angka desimal"
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal2" required>
+                        <button class="btn btn-warning" type="button"
+                            onclick="calculateTwosComplement()">Hitung</button>
+                    </div>
+
+                    <label class="text-black" data-aos="fade-up">Hasil</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <textarea class="form-control h-200" id="compls2" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <Label data-aos="fade-down">Complement lainnya : </Label>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-right" href="#compl" role="button">1</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl7" role="button">7</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl8" role="button">8</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-left" href="#compl9" role="button">9</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#CDF5FD" fill-opacity="1"
+                d="M0,64L20,101.3C40,139,80,213,120,208C160,203,200,117,240,90.7C280,64,320,96,360,144C400,192,440,256,480,245.3C520,235,560,149,600,138.7C640,128,680,192,720,181.3C760,171,800,85,840,64C880,43,920,85,960,106.7C1000,128,1040,128,1080,128C1120,128,1160,128,1200,160C1240,192,1280,256,1320,266.7C1360,277,1400,235,1420,213.3L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#39A7FF" fill-opacity="0.9"
+            d="M0,96L30,117.3C60,139,120,181,180,208C240,235,300,245,360,256C420,267,480,277,540,261.3C600,245,660,203,720,192C780,181,840,203,900,181.3C960,160,1020,96,1080,96C1140,96,1200,160,1260,186.7C1320,213,1380,203,1410,197.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+    <section id="compl7">
+
+        <div class="container-fluid">
+            <div class="row text-center text-white mb-3">
+                <div class="col mb-3">
+                    <h1 data-aos="fade-up" data-aos-duration="500"> <strong><u>
+
+                                Seven's Complement
+                            </u></strong> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center text-white text-bold mx-5">
+                <h4 data-aos="fade-right" data-aos-duration="700">
+                    Deskripsi
+                </h4>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                    Untuk memperoleh komplemen 1 suatu bilangan biner (berbasis 2), kita mengurangkan setiap digit
+                    bilangan tersebut dari 1.
+                    Alternatifnya, kita dapat mengganti setiap 1 dengan 0 dan setiap 0 dengan 1.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-8 col-lg-6">
+                    <label class="text-white" data-aos="fade-up">Masukkan angka desimal:</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <input class="form-control" placeholder="Masukkan Angka desimal"
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                        <button class="btn btn-warning" type="button"
+                            onclick="calculateOnesComplement()">Hitung</button>
+                    </div>
+
+                    <label class="text-white" data-aos="fade-up">Hasil</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <textarea class="form-control" id="compls7" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <Label data-aos="fade-down">Complement lainnya : </Label>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-right" href="#compl" role="button">1</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#2compl" role="button">2</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl8" role="button">8</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-left" href="#compl9" role="button">9</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#CDF5FD" fill-opacity="1"
+                d="M0,64L20,101.3C40,139,80,213,120,208C160,203,200,117,240,90.7C280,64,320,96,360,144C400,192,440,256,480,245.3C520,235,560,149,600,138.7C640,128,680,192,720,181.3C760,171,800,85,840,64C880,43,920,85,960,106.7C1000,128,1040,128,1080,128C1120,128,1160,128,1200,160C1240,192,1280,256,1320,266.7C1360,277,1400,235,1420,213.3L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+
+
+    </section>
+    <section id="compl8">
+
+        <div class="container">
+            <div class="row text-center text-black mb-3">
+                <div class="col mb-3">
+                    <h1 data-aos="fade-up" data-aos-duration="500"> <strong><u>
+
+                                Eight's Complement
+                            </u></strong> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center text-black text-bold mx-5">
+                <h4 data-aos="fade-right" data-aos-duration="700">
+                    Deskripsi
+                </h4>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                    Untuk memperoleh komplemen 1 suatu bilangan biner (berbasis 2), kita mengurangkan setiap digit
+                    bilangan tersebut dari 1.
+                    Alternatifnya, kita dapat mengganti setiap 1 dengan 0 dan setiap 0 dengan 1.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-8 col-lg-6">
+                    <label class="text-black" data-aos="fade-up">Masukkan angka desimal:</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <input class="form-control" placeholder="Masukkan Angka desimal"
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                        <button class="btn btn-warning" type="button"
+                            onclick="calculateOnesComplement()">Hitung</button>
+                    </div>
+
+                    <label class="text-black" data-aos="fade-up">Hasil</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <textarea class="form-control" id="compls8" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <Label data-aos="fade-down">Complement lainnya : </Label>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-right" href="#compl" role="button">1</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#2compl" role="button">2</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl7" role="button">7</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-left" href="#compl9" role="button">9</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#CDF5FD" fill-opacity="1"
+                d="M0,64L20,101.3C40,139,80,213,120,208C160,203,200,117,240,90.7C280,64,320,96,360,144C400,192,440,256,480,245.3C520,235,560,149,600,138.7C640,128,680,192,720,181.3C760,171,800,85,840,64C880,43,920,85,960,106.7C1000,128,1040,128,1080,128C1120,128,1160,128,1200,160C1240,192,1280,256,1320,266.7C1360,277,1400,235,1420,213.3L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#39A7FF" fill-opacity="0.9"
+            d="M0,96L30,117.3C60,139,120,181,180,208C240,235,300,245,360,256C420,267,480,277,540,261.3C600,245,660,203,720,192C780,181,840,203,900,181.3C960,160,1020,96,1080,96C1140,96,1200,160,1260,186.7C1320,213,1380,203,1410,197.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+    <section id="compl9">
+
+        <div class="container">
+            <div class="row text-center text-white mb-3">
+                <div class="col mb-3">
+                    <h1 data-aos="fade-up" data-aos-duration="500"> <strong><u>
+
+                                Nine's Complement
+                            </u></strong> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center text-white text-bold mx-5">
+                <h4 data-aos="fade-right" data-aos-duration="700">
+                    Deskripsi
+                </h4>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                    Untuk memperoleh komplemen 1 suatu bilangan biner (berbasis 2), kita mengurangkan setiap digit
+                    bilangan tersebut dari 1.
+                    Alternatifnya, kita dapat mengganti setiap 1 dengan 0 dan setiap 0 dengan 1.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-8 col-lg-6">
+                    <label class="text-white" data-aos="fade-up">Masukkan angka desimal:</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <input class="form-control" placeholder="Masukkan Angka desimal"
+                            aria-label="Masukkan Angka desimal" type="number" id="input_decimal" required>
+                        <button class="btn btn-warning" type="button"
+                            onclick="calculateOnesComplement()">Hitung</button>
+                    </div>
+
+                    <label class="text-white" data-aos="fade-up">Hasil</label>
+                    <div class="input-group mb-3" data-aos="fade-up">
+                        <textarea class="form-control" id="compls9" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <Label data-aos="fade-down">Complement lainnya : </Label>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-right" href="#compl" role="button">1</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#2compl" role="button">2</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="fade-up" href="#compl7" role="button">7</a>
+                <a class="btn-sm btn-primary col-1 mx-1 mb-3" data-aos="zoom-in-left" href="#compl8" role="button">8</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#CDF5FD" fill-opacity="1"
+                d="M0,64L20,101.3C40,139,80,213,120,208C160,203,200,117,240,90.7C280,64,320,96,360,144C400,192,440,256,480,245.3C520,235,560,149,600,138.7C640,128,680,192,720,181.3C760,171,800,85,840,64C880,43,920,85,960,106.7C1000,128,1040,128,1080,128C1120,128,1160,128,1200,160C1240,192,1280,256,1320,266.7C1360,277,1400,235,1420,213.3L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+
+
+    </section>
+    <a href="#Home">
+        <button type="button" class="btn btn-primary" id="backToHomeBtn"><svg xmlns="http://www.w3.org/2000/svg"
+                height="1em" viewBox="0 0 576 512">
+                <path fill="#ffff"
+                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg></button>
+    </a>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="compl.js"></script>
+
+
+
+</html>
