@@ -78,7 +78,9 @@ section {
 /*
  * Header
  */
-
+textarea {
+    height : 80px
+}
 
 #backToHomeBtn {
     position: fixed;
