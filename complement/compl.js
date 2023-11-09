@@ -59,11 +59,71 @@ function calculateTwosComplementFromDecimal(decimal) {
 }
 // END TWO'S COMPLEMENT
 
+// START SEVEN'S COMPLEMENT
+function calculateSevensComplement() {
+    const inputDecimal = parseInt(document.getElementById('input_decimal3').value);
+
+    const inputOctal = inputDecimal.toString(8); // Mengonversi desimal ke oktal
+    const sevensComplement = calculateSevensComplementFromOctal(inputOctal); // Memanggil fungsi yang belum didefinisikan
+
+    document.getElementById('compls7').textContent = `Bilangan desimal dari ${inputDecimal} = ${inputOctal} dalam octal \nJadi 7's Complement dari ${inputOctal} adalah ${sevensComplement}`;
+}
+
+function calculateSevensComplementFromOctal(octal) {
+    let sevensComplement = '';
+    for (let i = 0; i < octal.length; i++) {
+        const digit = parseInt(octal[i], 8);
+        const complement = 7 - digit;
+        sevensComplement += complement.toString(8);
+    }
+    return sevensComplement;
+}
+
+// END SEVEN'S COMPLEMENT
+
+// START EIGTH'S COMPLEMENT
+function calculateEightsComplement() {
+    const inputDecimal = parseInt(document.getElementById('input_decimal4').value);
+
+    const inputOctal = inputDecimal.toString(8); // Mengonversi desimal ke oktal
+    const EightsComplement = calculateEightsComplementFromOctal(inputOctal); // Memanggil fungsi yang belum didefinisikan
+
+    const eight = parseInt(EightsComplement) + 1;
+
+    document.getElementById('compls8').textContent = `Bilangan desimal dari ${inputDecimal} = ${inputOctal} dalam octal \ndan ${EightsComplement} dalam 7's Complement di tambah 1 \nJadi 8's Complement dari ${inputOctal} adalah ${eight}`;
+}
+
+function calculateEightsComplementFromOctal(octal) {
+    let EightsComplement = '';
+    for (let i = 0; i < octal.length; i++) {
+        const digit = parseInt(octal[i], 8);
+        const complement = 7 - digit;
+        EightsComplement += complement.toString(8);
+    }
+    return EightsComplement;
+}
+
+// END EIGTH'S COMPLEMENT
 
 
 
+// START NINE'S COMPLEMENT
+function calculateNinesComplement() {
+    const inputOctal = document.getElementById('input_decimal5').value;
+    const NinesComplement = calculateNinesComplementFromOctal(inputOctal);
+    document.getElementById('compls9').textContent = `9's Complement dari ${inputOctal} adalah ${NinesComplement}`;
+}
 
-
+function calculateNinesComplementFromOctal(octal) {
+    let NinesComplement = '';
+    for (let i = 0; i < octal.length; i++) {
+        const digit = parseInt(octal[i], 10);
+        const complement = 9 - digit;
+        NinesComplement += complement.toString(10);
+    }
+    return NinesComplement;
+}
+// END NINE'S COMPLEMENT
 
 
 
