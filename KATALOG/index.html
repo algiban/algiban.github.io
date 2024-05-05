@@ -344,6 +344,28 @@
             $('#umkmCarousel').carousel('next');
         }, 4000);
     });
+    $(document).ready(function() {
+    // Fungsi untuk menambahkan kelas aktif ke navbar
+    function setActiveNav() {
+        var scrollPosition = $(document).scrollTop();
+
+        $('section').each(function() {
+            var top = $(this).offset().top - 100; // Menyesuaikan dengan tinggi navbar
+            var bottom = top + $(this).outerHeight();
+
+            if (scrollPosition >= top && scrollPosition < bottom) {
+                var sectionId = $(this).attr('id');
+                $('.navbar-nav a').removeClass('active');
+                $('.navbar-nav a[href="#' + sectionId + '"]').addClass('active');
+            }
+        });
+    }
+
+    // Panggil fungsi setActiveNav saat dokumen dimuat dan di-scroll
+    setActiveNav();
+    $(window).scroll(setActiveNav);
+});
+
 </script>
 
         <script>
